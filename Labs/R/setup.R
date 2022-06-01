@@ -216,13 +216,10 @@ fmt = function(x, title=NULL, position="center", row.names=FALSE, force=FALSE, a
             else x[e[1],e[2]] = cell_spec(x[e[1],e[2]], color="red", bold=TRUE) } }
    
   
-    x =  kableExtra::kable(x, escape=FALSE, format="html", align=rep("r", ncol(x)), caption=caption, row.names=row.names, table.attr="style=\"white-space: nowrap;\"")
+    x =  kableExtra::kable(x, escape=FALSE, format="html", align=rep("r", ncol(x)), caption=caption, row.names=row.names, table.attr="style=\"white-space: nowrap; color: black;\"")
     if (row.names) x = column_spec(x, 1, bold=TRUE)
     x = kableExtra::row_spec(x, 0, background="#FFFFFF", color="black")
-    for (row in num_rows) {
-      x = kableExtra::row_spec(x, row, color="black")
-    }
-   
+    
     if (as.character(sys.call(-1))[1] == "eval") IRdisplay::display_html(as.character(x))
     else x }
 
