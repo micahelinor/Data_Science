@@ -56,6 +56,7 @@ suppressMessages(RNGversion("3.6.1")) # ensure consistent use of set.seed across
 # install.packages("stringr")
 # install.packages("SnowballC")
 # install.packages("tm")
+require(psych)
 
 
 # Load libraries
@@ -91,7 +92,7 @@ suppressMessages(RNGversion("3.6.1")) # ensure consistent use of set.seed across
 # suppressMessages(library(NLP))
 # suppressMessages(library(pracma))
 # suppressMessages(library(polyclip))
-# suppressMessages(library(psych))
+suppressMessages(library(psych))
 # suppressMessages(library(qgraph))
 # suppressMessages(library(readxl))
 # suppressMessages(library(reshape2))
@@ -105,6 +106,7 @@ suppressMessages(RNGversion("3.6.1")) # ensure consistent use of set.seed across
 # suppressMessages(library(stringr))
 # suppressMessages(library(SnowballC))
 # suppressMessages(library(tm))
+
 
 
 # Set some constants
