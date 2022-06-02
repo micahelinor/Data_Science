@@ -57,6 +57,9 @@ suppressMessages(RNGversion("3.6.1")) # ensure consistent use of set.seed across
 # install.packages("SnowballC")
 # install.packages("tm")
 require(psych)
+require(lubridate)
+require("reshape2")
+require("ggplot2")
 
 
 # Load libraries
@@ -92,7 +95,7 @@ require(psych)
 # suppressMessages(library(NLP))
 # suppressMessages(library(pracma))
 # suppressMessages(library(polyclip))
-suppressMessages(library(psych))
+# suppressMessages(library(psych))
 # suppressMessages(library(qgraph))
 # suppressMessages(library(readxl))
 # suppressMessages(library(reshape2))
