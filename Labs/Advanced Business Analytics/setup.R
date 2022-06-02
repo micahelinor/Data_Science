@@ -60,7 +60,7 @@ require(psych)
 require(lubridate)
 require("reshape2")
 require("ggplot2")
-
+require("gridExtra")
 
 # Load libraries
 # suppressMessages(library(lightgbm)) # must be first library loaded
