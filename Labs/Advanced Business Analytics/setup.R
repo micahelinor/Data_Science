@@ -46,7 +46,7 @@ suppressMessages(RNGversion("3.6.1")) # ensure consistent use of set.seed across
 # install.packages("qgraph")
 # install.packages("readxl")
 # install.packages("reshape2")
-#install.packages("rgl")
+# install.packages("rgl")
 # install.packages("rjson")
 # install.packages("rmarkdown")
 # install.packages("rpart")
@@ -62,6 +62,7 @@ require(reshape2)
 require(ggplot2)
 require(gridExtra)
 require(GGally)
+require(rgl)
 
 # Load libraries
 # suppressMessages(library(lightgbm)) # must be first library loaded
