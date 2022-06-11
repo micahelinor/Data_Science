@@ -64,6 +64,7 @@ require(gridExtra)
 require(GGally)
 require(rgl)
 require(plyr)
+require(dplyr)
 
 # Load libraries
 # suppressMessages(library(lightgbm)) # must be first library loaded
