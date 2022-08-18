@@ -226,7 +226,7 @@ fmt = function(x, title=NULL, position="center", row.names=FALSE, force=FALSE, a
    
   
     x =  kableExtra::kable(x, escape=FALSE, format="html", align=rep("r", ncol(x)), caption=caption, row.names=row.names, table.attr="style=\"white-space: nowrap; background: white; color: black;\"")
-    if (row.names) x = column_spec(x, 1, bold=TRUE)
+    if (row.names) x = kableExtra::column_spec(x, 1, bold=TRUE)
     x = kableExtra::row_spec(x, 0, background="#FFFFFF", color="black")
     for (row in num_rows) {
       x = kableExtra::row_spec(x, row, background="#FFFFFF", color="black")
